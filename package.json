@@ -9,6 +9,7 @@
     "test:watch": "jest --watch",
     "test:ci": "jest -ci --runInBand",
     "test:coverage": "jest --coverage",
+    "cypress": "concurrently \"ng serve\" \"cypress open\"",
     "lint": "ng lint"
   },
   "private": true,
@@ -31,6 +32,8 @@
     "@angular/compiler-cli": "~12.1.0-",
     "@types/jest": "^26.0.24",
     "@types/node": "^12.11.1",
+    "concurrently": "^6.2.0",
+    "cypress": "^8.0.0",
     "jest": "^27.0.6",
     "jest-preset-angular": "^9.0.5",
     "typescript": "~4.3.2"
